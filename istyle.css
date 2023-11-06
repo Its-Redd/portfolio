@@ -10,14 +10,21 @@
 /* HEADER */
 
 header {
-  background-color: rgb(114, 114, 114);
-  text-align: center;
+  background-color: #727272;
+  text-align: left;
   font-size: 2em;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header h1 {
-  color: rgb(255, 3, 3);
+  color: rgb(255, 255, 255);
 }
 
 header h6 {
@@ -25,18 +32,86 @@ header h6 {
   font-weight: 400;
 }
 
+nav {
+  margin-top: 1%;
+  margin-right: 1%;
+  display: flex;
+  justify-content: space-around;
+  min-width: 20%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
 /* MAIN */
 
 main {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: spa;
   font-family: "Kanit", sans-serif;
   padding-bottom: 10vh;
   padding-top: 5vh;
-  background: #2b2b2b;
+  border-radius: 2%;
+  background: #727272;
+}
 
+.profileimg {
+  width: 25%;
+  position: sticky;
+  margin: 0;
+  margin-left: -2%;
+  padding: 0;
+  border-radius: 0% 0% 0% 3%;
+}
 
+.indextext {
+  display: flex;
+  flex-direction: column;
+  max-width: 69%;
+  margin: 4vh 2vw;
+}
+
+.index h2 {
+  justify-self: center;
+  font-size: 7em;
+  color: white;
+}
+
+.index h3 {
+  font-size: 4em;
+  color: white;
+  margin-top: -4%;
+  margin-bottom: 2%;
+}
+
+h3 i {
+  font-size: 0.85em;
+}
+
+.index p {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 5%;
+}
+
+.index {
+  margin-left: 2vw !important;
+  margin-right: 2vw !important;
+  margin-bottom: 6vh !important;
+  justify-content: center;
+  padding: 0 !important;
+  max-height: 80vh;
+}
+
+.index span {
+  font-size: 3em;
+}
+
+html {
+  background-color: #2b2b2b;
+}
 
 .classbox {
   display: flex;
@@ -62,22 +137,6 @@ img {
   width: 100%;
 }
 
-a {
-  font-size: 2em;
-  color: red;
-  text-decoration: none;
-  transition: 0.3s;
-  text-align: center;
-}
-
-/* a:hover {
-  font-size: 1.5em;
-  color: crimson;
-  text-decoration: none;
-  border-radius: 0.4em;
-  padding: 0.4em;
-} */
-
 footer {
   text-align: center;
   position: fixed;
@@ -88,6 +147,24 @@ footer {
   -webkit-box-shadow: 0px -9px 29px -18px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px -9px 29px -18px rgba(0, 0, 0, 1);
   box-shadow: 0px -9px 29px -18px rgba(0, 0, 0, 1);
+}
+
+.projects {
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.classbox {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 45%;
+}
+
+.classbox a {
+  text-decoration: none;
+  font-size: 3em;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
