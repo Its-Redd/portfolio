@@ -25,6 +25,7 @@ header a {
 
 header h1 {
   color: rgb(255, 255, 255);
+  margin-left: 1%;
 }
 
 header h6 {
@@ -44,6 +45,10 @@ nav a {
   color: white;
   text-decoration: none;
   margin-right: 3%;
+}
+
+nav a:hover {
+  color: crimson;
 }
 /* MAIN */
 
@@ -135,6 +140,10 @@ html {
 
 .classbox a {
   color: rgb(82, 82, 82);
+}
+
+.classbox a:hover {
+  color: crimson;
 }
 
 .classbox i {
